@@ -5,7 +5,7 @@ import { ImFacebook2 } from 'react-icons/im';
 const Footer = () => {
     return (
        
-      <footer className="lg:container  mx-auto bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
+      <footer className="mt-10 lg:container  mx-auto bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Logo & Description */}
          <div className='flex flex-col lg:flex-row gap-10'>
