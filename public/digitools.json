@@ -5,8 +5,9 @@
     "icon": "✍️",
     "description": "Generate high-quality content in seconds\nPerfect for blogs, ads, and emails",
     "price": 20,
-    "tag": "best seller",
-    "tagType": "best seller",
+    "month":"Month",
+    "tag": "Best seller",
+    "tagType": "Best seller",
     "features": ["AI content generator", "Grammar correction", "Multiple tone options"]
   },
   {
@@ -15,8 +16,9 @@
     "icon": "🎨",
     "description": "Ready-to-use templates for all design needs\nSave time and boost creativity",
     "price": 25,
-    "tag": "popular",
-    "tagType": "popular",
+    "month":"On-Time",
+    "tag": "Popular",
+    "tagType": "Popular",
     "features": ["200+ templates", "Figma & PSD files", "Easy customization"]
   },
   {
@@ -25,8 +27,9 @@
     "icon": "📸",
     "description": "Access high-quality images and videos\nPerfect for creative projects",
     "price": 30,
-    "tag": "new",
-    "tagType": "new",
+    "month":"Month",
+    "tag": "New",
+    "tagType": "New",
     "features": ["10,000+ assets", "Royalty-free", "HD & 4K quality"]
   },
   {
@@ -35,8 +38,9 @@
     "icon": "⚙️",
     "description": "Automate repetitive tasks easily\nImprove productivity and workflow efficiency",
     "price": 18,
-    "tag": "popular",
-    "tagType": "popular",
+    "month":"Month",
+    "tag": "Popular",
+    "tagType": "Popular",
     "features": ["Workflow automation", "Task scheduling", "Integration support"]
   },
   {
@@ -45,8 +49,9 @@
     "icon": "📄",
     "description": "Create professional resumes easily\nStand out to recruiters instantly",
     "price": 15,
-    "tag": "new",
-    "tagType": "new",
+    "month":"On-Time",
+    "tag": "New",
+    "tagType": "New",
     "features": ["ATS-friendly templates", "Export to PDF", "Custom sections"]
   },
   {
@@ -55,8 +60,9 @@
     "icon": "📱",
     "description": "Create engaging social media content\nBoost your online presence easily",
     "price": 17,
-    "tag": "best seller",
-    "tagType": "best seller",
+    "month":"Month",
+    "tag": "Best seller",
+    "tagType": "Best seller",
     "features": ["Post templates", "Caption generator", "Content calendar"]
   }
 ]
