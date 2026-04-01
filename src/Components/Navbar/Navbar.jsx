@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
 import { GrCart } from 'react-icons/gr';
-const Navbar = () => {
+const Navbar = ({carts}) => {
     return (
     <div className=' lg:container  mx-auto shadow-sm rounded-lg'>
         <div className="navbar flex md:flex-col md:items-center lg:flex-row   gap-4 lg:gap-0 max-w-7xl mx-auto">
@@ -30,7 +30,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end md:justify-center  gap-5 font-semibold">
-        <p><GrCart /></p>
+        <p className='flex items-center relative'><GrCart className='text-lg'/>
+        {carts.length>0 && (<span className='text-red-500 absolute -top-2 -right-5  text-base font-bold px-2 py-0.5 animate-bounce '>{carts.length}</span>)}
+        </p>
         <p>Login</p>
         <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white">Get Started</a>
       </div>

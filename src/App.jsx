@@ -21,10 +21,10 @@ function App() {
  const [carts,setCarts]=useState([])
   return (
     <>
-    <Navbar/>
+    <Navbar carts={carts}/>
     <Banner/>
     <Count/>
-    <Premium setShowTab={setShowTab}/>
+    <Premium setShowTab={setShowTab} carts={carts}/>
     {showTab ==='tools' && <Tools digiToolsPromise={digiToolsPromise} carts={carts} setCarts={setCarts}/>}
     {showTab ==='cart' && <Cart carts={carts} setCarts={setCarts}/>}
     <Section/>

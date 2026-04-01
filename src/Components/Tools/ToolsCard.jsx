@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { IoCheckmark } from 'react-icons/io5';
+import { toast } from 'react-toastify';
 const ToolsCard = ({digiTool,carts,setCarts}) => {
     const [addCart,setAddCart]=useState(false);
     const handleAddCart=()=>{
-      setAddCart(!addCart)
+      setAddCart(true)
+      const cartFind=carts.find(item=>item.id === digiTool.id);
+      if(cartFind){
+        toast.error(`${digiTool.title} Already Add`)
+         return
+      }
       setCarts([...carts,digiTool])
+      toast.success(`${digiTool.title} Added To Cart`)
     }
     return (
         <div>
