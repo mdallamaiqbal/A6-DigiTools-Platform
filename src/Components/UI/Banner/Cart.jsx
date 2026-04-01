@@ -1,6 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
-
+import CartImg from '../../../assets/Cart.png'
 const Cart = ({carts,setCarts}) => {
     const totalPrice =carts.reduce((sum,cart)=>sum+cart.price,0)
     const handlePayment =()=>{
@@ -13,9 +13,14 @@ const Cart = ({carts,setCarts}) => {
       toast.error(`${cart.title} is remove`)
     }
     return (
-        <div className='lg:max-w-7xl mx-auto  mt-10 p-10 shadow rounded-2xl flex flex-col gap-4'>
+        <div className='lg:max-w-7xl mx-auto  mt-10 p-10 shadow rounded-2xl flex flex-col'>
             <h2 className='font-bold text-2xl mb-6'>Your Cart</h2>
-            {
+            {carts.length===0 ? <div className='max-w-md mx-auto'>
+                <img src={CartImg} alt="" />
+                <h3 className='text-center font-extrabold text-2xl text-[#575756]'>Card Is Empty</h3>
+            </div>
+                :<div className='flex flex-col gap-4'>
+                     {
                 carts.map(cart=> <div className='p-5 flex justify-between items-center bg-[#F2F2F2] rounded-2xl'>
                      <div className='flex gap-4 items-center'>
                         <div className='border border-gray-200 rounded-full w-14 h-14  flex justify-center items-center'>
@@ -35,6 +40,9 @@ const Cart = ({carts,setCarts}) => {
             </div>
             <div> <button onClick={handlePayment} className='w-full py-4 font-bold rounded-2xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed to Checkout</button></div>
         </div>
+                
+            }
+         </div>
     );
 };
 

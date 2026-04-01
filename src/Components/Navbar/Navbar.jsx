@@ -3,8 +3,8 @@ import logo from '../../assets/logo.png'
 import { GrCart } from 'react-icons/gr';
 const Navbar = ({carts}) => {
     return (
-    <div className=' lg:container  mx-auto shadow-sm rounded-lg'>
-        <div className="navbar flex md:flex-col md:items-center lg:flex-row   gap-4 lg:gap-0 max-w-7xl mx-auto">
+    <div className=' lg:container  mx-auto sticky top-0 bg-[#FFF] z-50 shadow-sm rounded-lg'>
+        <div className="navbar flex md:flex-col md:items-center lg:flex-row    gap-4 lg:gap-0 max-w-7xl mx-auto">
       <div className="navbar-start md:justify-center">
         <div>
           <img src={logo} alt="" />
