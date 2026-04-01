@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Cart = ({carts,setCarts}) => {
+    const handleDelete=(cart)=>{
+      const filtered=carts.filter(item=>item.id !==cart.id)
+      setCarts(filtered)
+    }
     return (
         <div className='lg:max-w-7xl mx-auto  mt-10 p-10 shadow rounded-2xl flex flex-col gap-4'>
             <h2 className='font-bold text-2xl mb-6'>Your Cart</h2>
@@ -15,7 +19,7 @@ const Cart = ({carts,setCarts}) => {
                           <p className='text-[#627382] font-medium'>${cart.price}</p>
                        </div>
                      </div>
-                     <div><button className='font-bold text-[#FF3980]'>Remove</button></div>
+                     <div><button onClick={()=>handleDelete(cart)} className='font-bold text-[#FF3980]'>Remove</button></div>
                      </div>)
             }
             <div className='flex justify-between items-center px-1'>
